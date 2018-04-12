@@ -63,6 +63,7 @@ select, option {
 	height: 60px;
 }
 
+
 .header ul {
 	text-align: right;
 	float: right;
@@ -358,7 +359,7 @@ li.dropdown {
 
 .modal-container input, .modal-container textarea, .modal-container select {
     display: block;
-    width: 80%;
+    width: 50%;
     margin: 2px 0 10px 0;
 }
 
