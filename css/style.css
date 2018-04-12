@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+
+/* Skeleton */
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #fff;
+	color: #253858;
+	margin: 0;
+	padding: 0;
+}
+
+input[type=text]{
+	border: 2px solid #F4F5F7;
+	border-radius: 3px;
+	background-color: #F4F5F7;
+	margin: 10px;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #253858;
+	font-weight: bold;
+    cursor: pointer;
+}
+
+textarea {
+	border: 2px solid #F4F5F7;
+	border-radius: 3px;
+	background-color: #F4F5F7;
+	margin: 10px;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+    cursor: pointer;
+}
+
+select, option {
+    border: 2px solid #F4F5F7;
+	border-radius: 3px;
+	background-color: #F4F5F7;
+	margin: 10px;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+/* header **************************************************************/
+
+.header {
+    background-color: #253858;
+    position: static;
+    top: 0;
+	height: 60px;
+}
+
+.header ul {
+	text-align: right;
+	float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+	color: #fff;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin: -10px 0 0 10px;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #253858;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	color: #253858;	
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Backdrop **************************************************************/
+
+.backdrop {
+	background: #2196f3;
+	height: 22px;
+	width: 100%;
+	position: absolute;
+	padding-top: 20px;
+	margin-top: 24px;
+	z-index: -999;
+}
+
+
+/* Container **************************************************************/
+
+.container {
+	margin: 10px;
+}
+
+.container-flex {
+	display: flex;
+	cursor: pointer;
+	margin: 4px;
+}
+
+
+/* Columns **************************************************************/
+
+.column {
+	flex: 1;
+	margin: 4px;
+	background-color: #eee;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.column-phase h3 {
+	background: #2196f3;
+	color: #fff;
+	padding: 10px;
+	height: 22px;
+	margin: 10px -10px 10px -10px;
+	text-align: center;
+}
+
+/* Footer **************************************************************/
+
+.footer {
+	margin: 10px;
+	text-align: right;
+}
+
+/* Tasks **************************************************************/
+
+.task {
+	border-left: 3px solid orange;
+	margin: 4px 0;
+	background-color: #fff;
+	box-shadow: 2px 2px rgba(0,0,0,.12);
+	padding: 3px;
+	box-shadow: 2px 2px rgba(0,0,0,.12);
+}
+
+
+.task-header {
+	font-weight: bold;
+	text-transform: none;
+}
+
+.task-header p {
+	margin: 8px 0;
+}
+
+
+.task-header, .task-main, .task-footer {
+	padding: 0 5px;
+}
+
+.task-footer {
+}
+
+.task-footer-date {
+	text-align: right;
+	float: right;
+	font-size: 10px;
+	margin-top: 9px;
+	font-weight: bold;
+}
+
+.task-footer img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+
+.status-information {
+	border-left: 3px solid #2196f3;
+}
+
+.status-warning {
+	border-left: 3px solid #ffc107;
+}
+
+.status-success {
+	border-left: 3px solid #4caf50;
+}
+
+.status-alert {
+	border-left: 3px solid #ff5252;
+}
+
+.pull-left {
+	display: block;
+	float: left;
+	text-align: left;
+}
+
+.pull-right {
+	margin-left: 10px;
+	display: block;
+	float: right;
+	text-align: right;
+}
+
+/* Buttons **************************************************************/
+
+.button {
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-weight: bold;
+}
+
+.button-dark {
+    background-color: #253858;
+    color: #F4F5F7;
+    border: 2px solid #253858;
+	border-radius: 3px;
+}
+
+.button-dark:hover {
+    background-color: #253858;
+    color: #F4F5F7;
+}
+
+.button-light {
+    background-color: #F4F5F7;
+    color: #253858;
+    border: 2px solid #F4F5F7;
+	border-radius: 3px;
+}
+
+.button-light:hover {
+    background-color: #F4F5F7;
+    color: #253858;
+}
+
+/* Modal **************************************************************/
+
+/*
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+*/
+
+.modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6)
+}
+.modal-container {
+    display: flex;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 10px;
+    outline: 0;
+    width: 800px
+}
+
+.modal-container button:first-child {
+    margin-left: 10px;
+}
+
+.modal-container input, .modal-container textarea, .modal-container select {
+    display: block;
+    width: 80%;
+    margin: 2px 0 10px 0;
+}
+
+.modal-container label {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.modal-column {
+    flex: 1;
+    padding: 0 10px;
+    margin: 10px;
+}
+
+
+
+
+
+.modal-button {
+    border: none;
+    display: inline-block;
+    padding: 4px 8px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;;
+    background-color: #253858;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.modal-display-top-right{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+
+

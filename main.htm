@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boardy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+</head>
+<body>
+
+<div class="header">
+    <ul>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Timeline</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">jack.bauer@gmail.com <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="document.getElementById('help').style.display='block'">Help</a>
+                    <a href="#">My boards</a>
+                    <a href="#">My team</a>
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div>
+        </li>
+    </ul>
+</div>
+    
+
+
+<div class="container">
+    <div class="actionbar">
+	   <button class="button button-dark">New task</button> <button class="button button-light">Filter by status</button> <button class="button button-light">Filter by user</button>
+    </div>
+</div>
+
+<div class="backdrop">
+
+</div>
+    
+<div class="container-flex">
+
+	<div class="column">
+			<div class="column-phase"><h3>New Requests</h3></div>
+
+		
+		<div class="task status-alert" onclick="document.getElementById('id01').style.display='block'">
+			<div class="task-header">
+				<p>Projectplan</p>
+			</div>
+
+			<div class="task-footer">
+				<img src="img/jack.svg"> <span class="task-footer-date">7 mar</span>
+			</div>
+		</div>
+		
+		<div class="task status-warning">
+			<div class="task-header">
+				<p>Activitylist</p>
+			</div>
+			<div class="task-main">
+				
+			</div>
+			<div class="task-footer">
+				<img src="img/jack.svg"> <img src="img/alice.svg"> <img src="img/alicia.svg"> <img src="img/rob.svg"> <img src="img/ben.svg"> <span class="task-footer-date">12 mar</span>
+			</div>
+		</div>
+		
+		<div class="task status-information">
+			<div class="task-header">
+				<p>New sourcefile</p>
+			</div>
+			<div class="task-main">
+				
+			</div>
+			<div class="task-footer">
+				<img src="img/sarah.svg"><span class="task-footer-date">12 apr</span>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="column">
+		<div class="column-phase"><h3>Approved</h3></div>
+
+		<div class="task status-information">
+			<div class="task-header">
+				<p>New userinterface with logo that is taller</p>
+			</div>
+			<div class="task-main">
+				
+			</div>
+			<div class="task-footer">
+				<img src="img/jack.svg"> <img src="img/alice.svg"><span class="task-footer-date">12 apr</span>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="column">
+		<div class="column-phase"><h3>In progress</h3></div>
+		
+	<div class="task status-alert" id="openModal">
+			<div class="task-header">
+				<p>Projectplan</p>
+			</div>
+			<div class="task-main">
+				
+			</div>
+			<div class="task-footer">
+				<img src="img/jack.svg"> <img src="img/jonny.svg"> <img src="img/ken.svg"> <span class="task-footer-date">7 mar</span>
+			</div>
+		</div>
+		
+		<div class="task status-warning">
+			<div class="task-header">
+				<p>Activitylist</p>
+			</div>
+			<div class="task-main">
+				
+			</div>
+			<div class="task-footer">
+				<img src="img/jack.svg"> <img src="img/alice.svg"><span class="task-footer-date">12 mar</span>
+			</div>
+		</div>
+		
+		<div class="task status-warning">
+			<div class="task-header">
+				<p>New sourcefile</p>
+			</div>
+			<div class="task-main">
+				
+			</div>
+			<div class="task-footer">
+				<img src="img/sarah.svg"><span class="task-footer-date">12 mar</span>
+			</div>
+		</div>
+		
+	<div class="task status-alert" id="openModal">
+			<div class="task-header">
+				<p>Projectplan</p>
+			</div>
+			<div class="task-main">
+				
+			</div>
+			<div class="task-footer">
+				<img src="img/jack.svg"> <span class="task-footer-date">7 mar</span>
+			</div>
+		</div>
+		
+		<div class="task status-warning">
+			<div class="task-header">
+				<p>Activitylist</p>
+			</div>
+			<div class="task-main">
+				
+			</div>
+			<div class="task-footer">
+				<img src="img/jack.svg"> <img src="img/alice.svg"><span class="task-footer-date">12 mar</span>
+			</div>
+		</div>
+		
+		<div class="task status-warning">
+			<div class="task-header">
+				<p>New sourcefile</p>
+			</div>
+			<div class="task-main">
+				
+			</div>
+			<div class="task-footer">
+				<img src="img/sarah.svg"><span class="task-footer-date">12 mar</span>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="column">
+		<div class="column-phase"><h3>Review</h3></div>
+
+
+	</div>
+
+	<div class="column">
+		<div class="column-phase"><h3>Completed</h3></div>
+
+		<div class="task status-success">
+			<div class="task-header">
+				<p>New UI</p>
+			</div>
+			<div class="task-main">
+				
+			</div>
+			<div class="task-footer">
+				<img src="img/jack.svg"> <img src="img/alice.svg"><span class="task-footer-date">12 mar</span>
+			</div>			
+		</div>
+		
+		<div class="task status-success">
+			<div class="task-header">
+				<p>New UI</p>
+			</div>
+			<div class="task-main">
+				
+			</div>
+			<div class="task-footer">
+				<img src="img/jack.svg"> <img src="img/alice.svg"><span class="task-footer-date">12 mar</span>
+			</div>			
+		</div>
+
+
+	</div>
+</div>
+
+<!-- modal help -->
+<div id="help" class="modal">
+    <div class="modal-container">
+        <div class="modal-column">
+            <i class="fas fa-times modal-display-top-right" style="padding: 8px 10px; cursor: pointer;" onclick="document.getElementById('help').style.display='none'"></i>
+
+            <p>This is a test</p>
+        </div>
+    </div>
+    <div class="modal-container">
+        <button class="button button-light" onclick="document.getElementById('help').style.display='none'">Cancel</button>
+    </div>
+</div>
+    
+
+<!-- modal general -->    
+<div id="id01" class="modal">
+    <div class="modal-container">
+        <div class="modal-column">
+            <label>Name</label>
+            <input type="text" placeholder="Actionplan">
+            
+            <label>Created by</label>
+            <input type="text" placeholder="Jack">
+            
+            <label>Description</label>
+            <textarea rows="12" cols="50">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. </textarea>          
+        </div>
+        <div class="modal-column">
+            <i class="fas fa-times modal-display-top-right" style="padding: 8px 10px; cursor: pointer;" onclick="document.getElementById('id01').style.display='none'"></i>
+            
+             <label>Due date</label>
+            <input type="text" placeholder="12 apr, 2018">
+            
+            <label>Select status</label>
+            <select>
+              <option value="volvo">Planned</option>
+              <option value="saab">Issue</option>
+              <option value="mercedes">Postponed</option>
+              <option value="audi">Completed</option>
+            </select>  
+            
+            <label>Select phase</label>
+            <select>
+              <option value="volvo">New request</option>
+              <option value="saab">Approved</option>
+              <option value="mercedes">In progress</option>
+              <option value="audi">Review</option>
+              <option value="audi">Completed</option>
+            </select>
+        </div>
+
+    </div>
+    <div class="modal-container">
+        <button class="button button-dark">Save</button> <button class="button button-light" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+    </div>
+</div>
+    
+<div class="container">
+    <div class="footer">
+        <p>Copyright &copy; 2018 Boardly Inc.</p> 
+    </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("openModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}    
+</script>
+    
+<!-- <script type="text/javascript" src="js/modal.js"></script> -->
+     
+</body>
+</html> 
+
