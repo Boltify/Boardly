@@ -53,23 +53,24 @@
             $phaseId = $row[id];
 
             echo "<div class='column'>";
-                echo "<div class='column-phase'><h3>". $row[name] ."</h3>";
+                echo "<div class='column-phase'><h3><span><i class='fas fa-angle-double-right'></i></span> ". $row[name] ."</h3>";
 
                 // Retrieve the tasks for each phase
                 $sql = ("SELECT * FROM boardly_tasks WHERE phase_id = '$phaseId'");
                     foreach ($db->query($sql) as $row) {
                         
                          $taskId = $row[id];
+                         $priority = strtolower($row[priority]);
 
-                        echo "<div class='task priority-". $row[priority] ."' onclick='document.getElementById('4').style.display='block''>
+                        echo "<div class='task priority-". $priority ."' onclick='document.getElementById('". $taskId ."').style.display='block''>
                                  <div class='task-header'>
                                     <p>". $row[title] ."</p>
                                  </div>
                                  <div class='task-footer'>";
-                        
-                                     $avatar = $db->query("SELECT avatar FROM boardly_users WHERE id = ". $row[assigned_to_id] ."")->fetchColumn();
+                                 
+                                 	$avatar = $db->query("SELECT avatar FROM boardly_users WHERE id = ". $row[assigned_to_id] ."")->fetchColumn();
                                     
-                                    echo "<img src='img/". $avatar .".svg'> <span class='task-footer-date'>".  date('j M, Y', strtotime($row['duedate'])) ."</span>
+                                    echo "<img src='img/". $avatar .".svg'> <span class='task-footer-date'>".  date('M j, Y', strtotime($row['duedate'])) ."</span>
                                  </div>
                               </div>";
                     }
