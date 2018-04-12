@@ -222,21 +222,23 @@ li.dropdown {
 }
 
 
-.status-information {
-	border-left: 3px solid #2196f3;
+.priority-critical {
+	border-left: 3px solid #ff5252;
 }
 
-.status-warning {
+.priority-high {
 	border-left: 3px solid #ffc107;
 }
 
-.status-success {
+.priority-normal {
+	border-left: 3px solid #2196f3;
+}
+
+.priority-low {
 	border-left: 3px solid #4caf50;
 }
 
-.status-alert {
-	border-left: 3px solid #ff5252;
-}
+
 
 .pull-left {
 	display: block;

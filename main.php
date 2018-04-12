@@ -61,7 +61,7 @@
                         
                          $taskId = $row[id];
 
-                        echo "<div class='task status-information' onclick='document.getElementById('4').style.display='block''>
+                        echo "<div class='task priority-". $row[priority] ."' onclick='document.getElementById('4').style.display='block''>
                                  <div class='task-header'>
                                     <p>". $row[title] ."</p>
                                  </div>
