@@ -62,7 +62,7 @@
                          $taskId = $row[id];
                          $priority = strtolower($row[priority]);
 
-                        echo "<div class='task priority-". $priority ."' onclick='document.getElementById('". $taskId ."').style.display='block''>
+                        echo "<div class='task priority-". $priority ."' onclick='document.getElementById(". $taskId .").style.display='block''>
                                  <div class='task-header'>
                                     <p>". $row[title] ."</p>
                                  </div>
@@ -70,7 +70,7 @@
                                  
                                  	$avatar = $db->query("SELECT avatar FROM boardly_users WHERE id = ". $row[assigned_to_id] ."")->fetchColumn();
                                     
-                                    echo "<img src='img/". $avatar .".svg'> <span class='task-footer-date'>".  date('M j, Y', strtotime($row['duedate'])) ."</span>
+                                    echo "<img src='img/". $avatar .".svg'> <span class='task-footer-date'>".  date('M j, \'y', strtotime($row['duedate'])) ."</span>
                                  </div>
                               </div>";
                     }
@@ -117,10 +117,10 @@
         <button class="button button-light" onclick="document.getElementById('my-boards').style.display='none'">Cancel</button>
     </div>
 </div>
-    
 
-<!-- modal general -->
-<div id="4" class='modal'>
+
+<!-- modal Tasks -->
+<div id="9" class='modal'>
         <div class='modal-container'>
             <div class='modal-column'>
                 <label>Name</label>
